@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Menu">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="RECETAS"
+        android:textColor="#0080A7"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="545dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/comidas1" />
+
+            <Button
+                android:id="@+id/btnalmuerzo"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#78acac"
+                android:foregroundGravity="center_horizontal|fill"
+                android:text="Comida" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:hapticFeedbackEnabled="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/bebida" />
+
+            <Button
+                android:id="@+id/btnbebida"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+
+                android:backgroundTint="#78acac"
+                android:text="Bebida" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f07268"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Space
+            android:layout_width="07dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnusuario"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user_on" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/casa_off" />
+
+        <ImageButton
+            android:id="@+id/camara"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cam_off" />
+
+        <Space
+            android:layout_width="07dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

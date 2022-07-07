@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:foregroundGravity="center_vertical|center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f07268"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Space
+            android:layout_width="07dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnusuario"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user_off" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/casa_on" />
+
+        <ImageButton
+            android:id="@+id/camara"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cam_off" />
+
+        <Space
+            android:layout_width="07dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Peso:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txestatura" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Talla:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txsexo" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Genero:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txedad" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Edad:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txnombre" />
+
+    <TextView
+        android:id="@+id/txpeso"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:background="#6FE64A19"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/txestatura"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:background="#6FE64A19"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/txedad"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:background="#6FE64A19"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/txsexo"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:background="#6FE64A19"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="174dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C2185B"
+        android:text="Cerrar Sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmodificar" />
+
+    <Button
+        android:id="@+id/btnmodificar"
+        android:layout_width="176dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#0080A7 "
+        android:text="Modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txpeso" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="PERFIL"
+        android:textColor="#f07268"
+        android:textSize="34sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txnombre"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:background="#6FE64A19"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="Nombre:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

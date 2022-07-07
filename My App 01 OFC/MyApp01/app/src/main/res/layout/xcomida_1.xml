@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TexFiel2">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="350dp"
+        android:layout_height="651dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtn"
+                android:layout_width="280dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:scaleType="center"
+                app:srcCompat="@drawable/almuerzo1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="RAPE CON SALSA DE ALMENDRAS"
+                android:textColor="#E64A19"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" INGREDIENTES: 4 PERSONAS / 50 MINUTOS"
+                android:textColor="#6D6E6C"
+                android:textSize="16sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="4 lomos de rape \n5 tomates \n1 cabeza de ajo \n2 rebanadas de pan tostado \nSal y pimienta \n100 g de almendras tostadas \nPerejil \nAceite de oliva virgen \n2 cucharadas de vinagre de vino tinto"
+                android:textColor="#6D6E6C"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" PREPARACIÓN:"
+                android:textColor="#6D6E6C"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#134f5c"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="1. Lava los tomates y ponlos en una bandeja de horno con la cabeza de ajo. Hornéalos a 200 oC durante 30 min. Retíralos y déjalos templar.
+                \n\n2. Lava el rape y sécalo.
+                \n\n3. Pela las almendras y reserva algunas.
+                \n\n4. Lava el perejil, escúrrelo y pícalo fino.
+                \n\n5. Trocea el pan y mézclalo con el vinagre.
+                \n\n6. Luego, pela los tomates y los ajos. Tritura estos con la mezcla de pan, el resto de las almendras, 5 cucharadas de aceite, sal y pimienta.
+                \n\n7. Dora el rape, por todos lados, en 1cucharada de aceite, 10 min.
+                \n\n8. Reparte en 4 platos la salsa de almendras, añade el pescado y sírvelo condimentado con sal, pimienta, perejil y las almendras reservadas picadas."
+                android:textColor="#6D6E6C"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

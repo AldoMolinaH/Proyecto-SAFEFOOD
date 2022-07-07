@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Consulta Imagen"
+        android:textColor="#F57C00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="291dp"
+        android:layout_height="432dp"
+        android:layout_marginTop="20dp"
+        android:background="#D8CAB3"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="520dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="Imagen"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/tvPicture"
+                android:layout_width="212dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/img"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/txtrsultado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="Resultado"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="--------"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnChoosePicture"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Cargar Imagen"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f07268"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Space
+            android:layout_width="07dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnusuario"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user_on" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/casa_on" />
+
+        <ImageButton
+            android:id="@+id/camara"
+            android:layout_width="115dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top"
+            android:backgroundTint="#f07268"
+            android:foregroundGravity="top"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cam_on" />
+
+        <Space
+            android:layout_width="07dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="350dp"
+        android:layout_height="651dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtn"
+                android:layout_width="280dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:scaleType="center"
+                app:srcCompat="@drawable/cena1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="HAMBURGUESAS DE QUINOA Y VERDURAS CON TOMATE Y HUEVO DURO"
+                android:textColor="#E64A19"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGREDIENTES:  2 personas"
+                android:textColor="#6D6E6C"
+                android:textSize="16sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="4 huevos
+                \n300g de quinoa cocida
+                \n½ puerro 1 zanahoria
+                \n½ cebolla morada
+                \nHarina de garbanzo
+                \n2 cucharadas de queso cheddar cortado en dados muy pequeños
+                \n2 tomates de pera duros
+                \n100g de brotes tiernos variados
+                \nAceite de oliva Pimienta, sal"
+                android:textColor="#6D6E6C"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" PREPARACIÓN:"
+                android:textColor="#6D6E6C"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="1. Si tienes la quinoa ya cocina o la compras así, pasa al siguiente paso. En caso contrario, echa la quinoa en una cazuela y saltéala un poco. Después echa 1/2 vaso de agua por 1 de quinoa, ponlo a fuego lento, tapa la cazuela y tenlo en la cocina unos 15-20 minutos.
+                \n\n2. Si has tenido que cocer la quinoa, caliéntala un poco y pásala a un bol grande. Cuece 2 huevos durante 10 minutos, refréscalos con agua fría y pélalos.
+                \n\n3. Limpia el puerro y córtalo por la mitad a lo largo; lávalo y pícalo. Ponlo en un recipiente apto para el microondas, vierte medio dedo de agua, tapa y cuece 2 minutos. Remuévelo con cuidado de no quemarte y cuece por un minuto más. Después, escúrrelo.
+                \n\n4. Limpia la zanahoria, lávala y rállala. A continuación, pela y pica fina la cebolla.
+                \n\n5. Es el momento de mezclar la quinos con las verduras, el queso y la sal. Mezcla la quinoa con el puerro, la zanahoria, la cebolla, el queso, pimienta y sal. Agrega los huevos restantes (en crudo), uno a uno y removiendo. Añade 2 cucharadas rasas de harina de garbanzo y mezcla hasta integrarla.
+                \n\n6. Forma 4 bolas con la masa anterior, aplástalas un poco para hacer 4 hamburguesas y rebózalas con harina de garbanzo. Paso 7. Fríelas en una sartén con un hilo de aceite hasta que estén hechas.
+                \n\n8. Lava los tomates, los brotes tiernos, los rabanitos y la rúcula, y sécalos.
+                \n\n9. Corta en rodajas los huevos cocidos, el tomate y los rabanitos.
+                \n\n10. Para la presentación, cubre 2 hamburguesas con el tomate, el huevo y los brotes, y coloca encima las demás. Decora con los rabanitos y la rúcula, y sírvelas."
+                android:textColor="#6D6E6C"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
